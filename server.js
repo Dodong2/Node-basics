@@ -12,8 +12,7 @@ app.listen(port, () => {
 
 /* step 3: middleware */
 app.use(express.json())
-app.use(bodyParcer.json())
-app.use(bodyParcer.urlencoded({extended: true}))
+app.use(express.urlencoded({extended: true}))
 
 
 /* step 4: routes */
